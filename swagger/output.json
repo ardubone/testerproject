@@ -1,0 +1,224 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Cards API",
+    "description": "API для тестового проекта",
+    "version": "1.0.0"
+  },
+  "host": "localhost:3000",
+  "basePath": "/",
+  "schemes": [
+    "http"
+  ],
+  "externalDocs": {
+    "description": "Скачать JSON схему",
+    "url": "http://localhost:3000/api-doc.json"
+  },
+  "paths": {
+    "/cards": {
+      "get": {
+        "description": "Получить все карточки",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "description": "Создать новую карточку",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "link": {
+                  "type": "string"
+                },
+                "owner": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/cards/{id}": {
+      "get": {
+        "description": "Получить карточку по ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "description": "Лайти карточку по ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "userId": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "delete": {
+        "description": "Удалить карточку по ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "userId": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Card": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "example": "6"
+        },
+        "name": {
+          "type": "string",
+          "example": "Рим"
+        },
+        "link": {
+          "type": "string",
+          "example": "https://avatars.dzeninfra.ru/get-zen_doc/4467222/pub_6224c6f8f48a103f23d1e320_6224c7717124ba47b92eeb47/scale_2400"
+        },
+        "owner": {
+          "type": "string",
+          "example": "id7894"
+        },
+        "likes": {
+          "type": "array",
+          "example": [
+            "id123",
+            "id897",
+            "id7894"
+          ],
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "Cards": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Card"
+      }
+    },
+    "NewCard": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "example": "Рим"
+        },
+        "link": {
+          "type": "string",
+          "example": "https://avatars.dzeninfra.ru/get-zen_doc/4467222/pub_6224c6f8f48a103f23d1e320_6224c7717124ba47b92eeb47/scale_2400"
+        },
+        "owner": {
+          "type": "string",
+          "example": "id7894"
+        }
+      }
+    },
+    "LikeDislike": {
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "example": "id123"
+        }
+      }
+    },
+    "DeleteCard": {
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "example": "id123"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,79 @@
+[
+  {
+    "id": "1",
+    "name": "Флоренция",
+    "link": "https://avatars.dzeninfra.ru/get-zen_doc/1054867/pub_6224c6f8f48a103f23d1e320_6224c73271d894794944875b/scale_2400",
+    "owner": "id3",
+    "likes": [
+      "id5",
+      "id6",
+      "id7",
+      "id8",
+      "id9",
+      "id10"
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Киото",
+    "link": "https://avatars.dzeninfra.ru/get-zen_doc/5175112/pub_6224c6f8f48a103f23d1e320_6224c76e917a0f26fc29e0f7/scale_2400",
+    "owner": "id7894",
+    "likes": [
+      "id123"
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Санкт-Петербург",
+    "link": "https://avatars.dzeninfra.ru/get-zen_doc/2746730/pub_6224c6f8f48a103f23d1e320_6224c76e939d3b4e1374e660/scale_1200",
+    "owner": "id897",
+    "likes": [
+      "id123",
+      "id897",
+      "id7894"
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Картахена",
+    "link": "https://avatars.dzeninfra.ru/get-zen_doc/4460063/pub_6224c6f8f48a103f23d1e320_6224c76ee43cbd1673736009/scale_1200",
+    "owner": "id7894",
+    "likes": [
+      "id123",
+      "id897",
+      "id7894",
+      "id456"
+    ]
+  },
+  {
+    "id": "5",
+    "name": "Олесунн",
+    "link": "https://avatars.dzeninfra.ru/get-zen_doc/35845/pub_6224c6f8f48a103f23d1e320_6224c7707d589c04fccb886d/scale_1200",
+    "owner": "id8",
+    "likes": []
+  },
+  {
+    "id": "6",
+    "name": "Рим",
+    "link": "https://avatars.dzeninfra.ru/get-zen_doc/4467222/pub_6224c6f8f48a103f23d1e320_6224c7717124ba47b92eeb47/scale_2400",
+    "owner": "id7894",
+    "likes": [
+      "id123",
+      "id897",
+      "id7894"
+    ]
+  },
+  {
+    "id": "7",
+    "name": {
+      "example": "any"
+    },
+    "link": {
+      "example": "any"
+    },
+    "owner": {
+      "example": "any"
+    },
+    "likes": []
+  }
+]
