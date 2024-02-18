@@ -62,18 +62,5 @@
       "id897",
       "id7894"
     ]
-  },
-  {
-    "id": "7",
-    "name": {
-      "example": "any"
-    },
-    "link": {
-      "example": "any"
-    },
-    "owner": {
-      "example": "any"
-    },
-    "likes": []
   }
 ]
