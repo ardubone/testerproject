@@ -74,7 +74,7 @@
         }
       },
       "put": {
-        "description": "Лайти карточку по ID",
+        "description": "Лайкнуть карточку по ID",
         "parameters": [
           {
             "name": "id",
